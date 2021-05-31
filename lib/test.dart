@@ -61,6 +61,15 @@ void main() {
   //extents with implements
   C c = new C("name");
   c.printC();
+
+  //var定义的类型是不可变的，dynamic和object类型是可以变的，而dynamic 与object 的最大的区别是在静态类型检查上
+  dynamic ii = 1;
+  print("* ii = ${ii.runtimeType}");
+  print("* ii = ${ii}");
+  ii = "abs";
+  print("* ii = ${ii.runtimeType}");
+  print("* ii = ${ii.foo()}");//dynamic静态类型检查不会报错,所以不建议使用
+
 }
 
 //函数作为变量
