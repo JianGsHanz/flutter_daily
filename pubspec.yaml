@@ -41,6 +41,11 @@ dependencies:
 
   webview_flutter: ^2.0.8
 
+  provider: ^5.0.0
+
+  #轮播 https://github.com/best-flutter/flutter_swiper
+  flutter_swiper: ^1.1.6
+
 
 dev_dependencies:
   flutter_test:
